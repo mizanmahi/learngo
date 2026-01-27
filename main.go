@@ -2,20 +2,18 @@ package main
 
 import "fmt"
 
-// func makeCoffee() {
-
-// }
-
 func main() {
-	// anonymous function
-	// coffeeBanao := func() {
-	// 	fmt.Printf("Making coffee")
-	// }
+	sugar := 2
 
-	// coffeeBanao()
+	makeCoffee := func() {
+		coffee := "Cappuccino"
+		sugar := 3 // modify
+		fmt.Printf("Making %s with %d spoon of sugar \n", coffee, sugar)
+		fmt.Println("Value of inner sugar", sugar)
 
-	// IIFE
-	func(coffeeType string) {
-		fmt.Printf("Making hot %s....", coffeeType)
-	}("Latte")
+	}
+
+	makeCoffee()
+
+	fmt.Println("Value of outer sugar", sugar)
 }

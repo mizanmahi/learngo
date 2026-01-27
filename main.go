@@ -1,18 +1,19 @@
 package main
 
-// isAdmin := true // wrong
+import "fmt"
 
 func main() {
+	sugar := 2
 
-	user_name := "alice" // snake case, correct syntax
-	isAdmin := true      // camel case, correct syntax, preferred in Go
+	makeCoffee := func() {
+		coffee := "Cappuccino"
+		sugar := 3 // modify
+		fmt.Printf("Making %s with %d spoon of sugar \n", coffee, sugar)
+		fmt.Println("Value of inner sugar", sugar)
 
-	// invalid variable names
-	// 1st-name := "bob" // hyphen not allowed
-	// 2ndName := "charlie" // cannot start with a number
-	// var float := 3.14 // 'float' is a reserved keyword
+	}
 
-	println("User Name:", user_name)
-	println("Is Admin:", isAdmin)
+	makeCoffee()
 
+	fmt.Println("Value of outer sugar", sugar)
 }

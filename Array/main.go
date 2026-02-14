@@ -13,6 +13,11 @@ func main() {
 
 	// fmt.Println(numbers)
 
-	fmt.Println("Length of numbers is:", len(numbers))
+	// fmt.Println("Length of numbers is:", len(numbers))
+	fmt.Println(numbers[5])
+
+	for i := 0; i < len(numbers); i++ {
+		fmt.Println(numbers[i])
+	}
 
 }

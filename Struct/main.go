@@ -70,5 +70,3 @@ func main() {
 
 // embedding struct
 // constructor function
-// function fields in struct
-// receiver function

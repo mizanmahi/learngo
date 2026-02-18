@@ -2,13 +2,36 @@ package main
 
 import "fmt"
 
+type user struct {
+	name       string
+	age        int
+	isLoggedIn bool
+}
+
 func main() {
 
-	var myMap map[string]int
+	// myMap := make(map[int]string)
 
-	myMap["user1Phone"] = 019
+	// myMap[2] = "two"
+	// myMap[3] = "three"
+	// fmt.Println(myMap[2])
 
-	
+	// myMap := map[string]string{
+	// 	"name":    "Mizan",
+	// 	"Success": "ok",
+	// }
+
+	// delete(myMap, "name")
+
+	myMap := map[string]user{
+		"data": user{
+			name:       "mizan",
+			age:        25,
+			isLoggedIn: false,
+		},
+	}
+
+	fmt.Println(myMap)
 
 }
 
@@ -16,5 +39,5 @@ func main() {
 // accessing map values
 // adding new key-value pair to map
 // deleting key-value pair from map
-// iterating over map
 // map of struct
+// iterating over map

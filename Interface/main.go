@@ -42,6 +42,8 @@ func main() {
 	billi := Cat{}
 	mizan := Human{name: "mizan"}
 
+	mizan.name = "sdfj"
+
 	makeSound(dexter)
 	makeSound(billi)
 	makeSound(mizan)

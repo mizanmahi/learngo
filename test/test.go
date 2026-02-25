@@ -2,6 +2,10 @@ package test
 
 import "fmt"
 
+func init() {
+	fmt.Println("Im from test package init function")
+}
+
 type MockPaymentMethod struct {
 }
 
